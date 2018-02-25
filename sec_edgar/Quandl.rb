@@ -6,7 +6,7 @@ module Quandl
       begin
         json = Hash.new
         obj = Hash.new
-        url = "https://www.quandl.com/api/v3/datasets/WIKI/#{ticker}.json?column_index=4&start_date=#{sdate}&end_date=#{edate}&collapse=daily&transform=none&api_key=S1T9cY2VHhk2kvRkQmjR"
+        url = "https://www.quandl.com/api/v3/datasets/WIKI/#{ticker}.json?column_index=4&start_date=#{sdate}&end_date=#{edate}&collapse=daily&transform=none&api_key=$API_KEY"
         
         puts "Using Quandl to get data for start_date = #{sdate} ..end_date = #{edate} for ticker #{ticker} at url "
         puts "#{url}"
